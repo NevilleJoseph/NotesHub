@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context="com.pnpj.noteshub.FirstSignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        >
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/firstSignIn_nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/nameTextView"
+            android:layout_toRightOf="@id/nameTextView"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/collegeName"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/collegeNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College : "
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/firstSignIn_collegeNameAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/collegeNameTextView"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/collegeNameAdd"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/collegeNameAddTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Your College  : "
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/firstSignIn_collegeNameAddEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/collegeNameAddTextView"
+                android:layout_toRightOf="@id/collegeNameAddTextView"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/collegeRoll"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/collegeRollTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College Roll No : "
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/firstSignIn_collegeRollEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/collegeRollTextView"
+            android:layout_toRightOf="@id/collegeRollTextView"/>
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(This Roll No should match the one provided in the uploaded College ID Card )"
+            android:gravity="center"
+            android:id="@+id/rollNoPrompt"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/collegeBranch"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/collegeBranchTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch : "
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/firstSignIn_collegeBranchEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/collegeBranchTextView"
+            android:layout_alignBaseline="@id/collegeBranchTextView"
+            android:spinnerMode="dialog"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBranchNameRelLayout"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Branch Name : "
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/enterBranchName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/enterBranchName"
+            android:layout_alignBaseline="@id/enterBranchName"
+            android:id="@+id/firstSignIn_branchNameAddEditText"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/collegeYear"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/collegeYearTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester : "
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/collegeYearTextView"
+            android:spinnerMode="dialog"
+            android:id="@+id/semesterSpinner"
+            android:entries="@array/SemesterOfStudy" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/uploaderCheckBox"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UploaderText"
+        android:layout_alignBaseline="@id/uploaderCheckBox"
+        android:layout_toRightOf="@id/uploaderCheckBox"
+        android:layout_marginLeft="4dp"
+        android:text="I Want To Upload My Notes"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/UploaderText"
+            android:layout_alignLeft="@id/UploaderText"
+            android:text="(You can also become an uploader later by going into the \' Become An Uploader \' menu )"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/collegeIdPhotoLinearLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/collegeIdPhotoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload College Id Card : "
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/collegeIdPhotoTextView"
+            android:layout_toRightOf="@id/collegeIdPhotoTextView"
+            android:text="Select Photo"
+            android:id="@+id/collegeIdPhotoButton"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/collegeIdImageView"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:id="@+id/submitButton"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="3dp"
+        android:id="@+id/branchNotesCardView"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/branchesNameLinearLayout">
+
+            <TextView
+                android:id="@+id/branchesNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:maxLines="3"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

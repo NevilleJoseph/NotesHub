@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context="com.pnpj.noteshub.RedeemMoneyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter amount to redeem : ₹ "
+            android:textSize="18sp"
+            android:id="@+id/enteramt"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/enteramt"
+            android:layout_alignBaseline="@id/enteramt"
+            android:id="@+id/redeemMoneyAmountEditText"
+            android:inputType="numberDecimal"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redeemMoneyMaxAmt"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select payment mode : "
+            android:textSize="18sp"
+            android:id="@+id/selectMode"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/paymentMode"
+            android:layout_toRightOf="@id/selectMode"
+            android:id="@+id/redeemMoneyPaymentModeSpinner"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/redeemMoneyEnterNumberLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter PayTM number : "
+            android:textSize="18sp"
+            android:id="@+id/enterNum"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/enterNum"
+            android:layout_alignBaseline="@id/enterNum"
+            android:id="@+id/redeemMoneyEnterNumberEditText"
+            android:inputType="number"
+            android:maxLength="10"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/redeemMoneyEnterUPILayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter UPI ID / Number : "
+            android:textSize="18sp"
+            android:id="@+id/enterUPI"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/enterUPI"
+            android:layout_alignBaseline="@id/enterUPI"
+            android:id="@+id/redeemMoneyEnterUPIEditText"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="Submit"
+        android:id="@+id/redeemMoneySubmitButton"/>
+
+</LinearLayout>

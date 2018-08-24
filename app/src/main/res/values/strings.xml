@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">NotesHub</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9819992292681972/5690293036</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="SemesterOfStudy">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+    </string-array>
+
+    <string-array name="paymentMode">
+        <item>PayTM</item>
+        <item>UPI (BHIM,Tez etc.)</item>
+    </string-array>
+</resources>

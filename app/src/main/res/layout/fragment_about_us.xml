@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context="com.pnpj.noteshub.AboutUsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PNPJ Developers Team"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Neville Joseph - Backend Developer"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="2nd Year Engineering Student\nElectronics and Communication, NIT Patna"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prince Pal - UI/UX Designer,\nFrontend Developer"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="2nd Year Engineering Student\nMechanical, NIT Patna"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Terms and Conditions"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:id="@+id/termsconditions"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Privacy Policy"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:id="@+id/privacypolicy"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="Contact Us : developerspnpj@gmail.com"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+</LinearLayout>

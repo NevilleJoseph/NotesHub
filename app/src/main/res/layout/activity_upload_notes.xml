@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context="com.pnpj.noteshub.UploadNotesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College : "
+            android:textColor="@color/black"
+            android:id="@+id/uploadCollegeTextView"/>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadCollegeAutoComplete"
+            android:layout_toRightOf="@id/uploadCollegeTextView"
+            android:layout_alignBaseline="@id/uploadCollegeTextView"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch : "
+            android:textColor="@color/black"
+            android:id="@+id/uploadBranchTextView"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadBranchSpinner"
+            android:layout_toRightOf="@id/uploadBranchTextView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester : "
+            android:textColor="@color/black"
+            android:id="@+id/uploadSemesterTextView"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadSemesterSpinner"
+            android:layout_toRightOf="@id/uploadSemesterTextView"
+            android:layout_alignBaseline="@id/uploadSemesterTextView"
+            android:entries="@array/SemesterOfStudy"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject : "
+            android:textColor="@color/black"
+            android:id="@+id/uploadSubjectTextView"/>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadSubjectAutoComplete"
+            android:layout_toRightOf="@id/uploadSubjectTextView"
+            android:layout_alignBaseline="@id/uploadSubjectTextView"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadCompletedCheckBox"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/uploadCompletedCheckBox"
+        android:layout_alignBaseline="@id/uploadCompletedCheckBox"
+        android:text="Are the notes complete? ( Tick if Yes )"
+        android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Images"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:id="@+id/uploadSelectImagesButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="( Select Images In the Correct Order To Be Uploaded )"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:id="@+id/recyclerViewUploadNotes"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/uploadSubmitButton"/>
+
+    </LinearLayout>
+</ScrollView>

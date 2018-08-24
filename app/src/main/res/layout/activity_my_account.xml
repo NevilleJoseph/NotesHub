@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context="com.pnpj.noteshub.MyAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myAccountNameTextView"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College : "
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myAccountCollegeTextView"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch : "
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myAccountBranchTextView"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semester : "
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myAccountSemesterTextView"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll No : "
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myAccountRollNoTextView"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Earnings : "
+                android:id="@+id/textview1"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myAccountMoneyEarnedTextView"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@id/textview1"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redeem money"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/textview1"
+            android:backgroundTint="#FFA726"
+            android:id="@+id/myAccountRedeemMoneyButton"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/notesCardView"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:elevation="3dp"
+            app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="#80CBC4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:text="You can start earning money by becoming an Uploader."
+                android:textColor="@color/black"
+                android:id="@+id/myAccountBecomeUploaderTextView"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:text="You can start earning money by uploading your notes."
+                android:textColor="@color/black"
+                android:id="@+id/myAccountUploadFilesTextView"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:text="Increase your earnings by uploading good quality notes and also updating the notes at regular intervals."
+                android:id="@+id/myAccountIncreaseEarningsTextView"
+                tools:visibility="visible"/>
+
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

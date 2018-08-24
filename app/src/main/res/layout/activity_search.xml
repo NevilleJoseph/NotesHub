@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.pnpj.noteshub.SearchActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/searchadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/searchadView" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select College : "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/searchFragCollegeText"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchFragCollegeSpinner"
+            android:spinnerMode="dialog"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Branch : "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/searchFragBranchText"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchFragBranchSpinner"
+            android:spinnerMode="dialog"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchFragSemesterLinearLayout"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Semester : "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/searchFragSemesterText"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchFragSemesterSpinner"
+            android:spinnerMode="dialog"
+            android:entries="@array/SemesterOfStudy"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchFragSubjectLinearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Subject : "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/searchFragSubjectText"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchFragSubjectSpinner"
+            android:spinnerMode="dialog"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Search Notes"
+        android:id="@+id/searchFragSubmitButton"/>
+
+</LinearLayout>
+
+</RelativeLayout>

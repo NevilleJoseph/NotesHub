@@ -1,0 +1,86 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".HomeFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Top Notes From Your Branch"
+        android:id="@+id/homeFragmentTopNotesTextView"
+        android:layout_marginBottom="4dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/homeFragmentprogressTopNotes"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Notes Found"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/homeFragNotesNoFound"
+            android:visibility="gone"
+            android:layout_margin="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/homeFragmentrecyclerView_TopBranch">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branches"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:id="@+id/homeFragmentprogressBranch"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeFragmentBranchRecyclerView">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/homeFragmentFakeAdSpaceTextView"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/notesCardView"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_add_circle_outline_black_24dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/myUploadsDesignAddFilesImageView"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_below="@id/myUploadsDesignAddFilesImageView"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/myUploadsDesignDeleteNoteImageView"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch : "
+            android:id="@+id/branch"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myUploadsBranch"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/branch"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/line1"
+        android:id="@+id/line2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester : "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myUploadsSemester"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/line2"
+        android:id="@+id/line3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject : "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myUploadsSubject"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/line3"
+        android:id="@+id/line4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College : "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myUploadsCollege"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/line4"
+            android:id="@+id/line6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uploaded By : "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myUploadsUploaderName"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/line6"
+        android:id="@+id/line5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Updated On : "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myUploadsUpdatedDate"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:layout_below="@id/line5"
+        android:id="@+id/myUploadsDesignLinearLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_remove_red_eye_black_24dp"
+            android:id="@+id/myUploadsViews"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_thumb_up_black_24dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/myUploadsLikes"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_thumb_down_black_24dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/myUploadsDislikes"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_file_download_black_24dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/myUploadsDownloads"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

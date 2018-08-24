@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="pressed_blue">#3F51B5</color>
+    <color name="myDownloads">#CBCAB6</color>
+    <color name="myUploads">#E0DFD8</color>
+    <color name="searchNotes">#c1d5e0</color>
+    <color name="Subjects">#90A5af</color>
+    <color name="Branches">#a18874</color>
+</resources>

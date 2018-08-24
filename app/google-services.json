@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "316893719643",
+    "firebase_url": "https://noteshub-e25ec.firebaseio.com",
+    "project_id": "noteshub-e25ec",
+    "storage_bucket": "noteshub-e25ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316893719643:android:cfd1d5dd2596c953",
+        "android_client_info": {
+          "package_name": "com.pnpj.noteshub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316893719643-cfeprsog226u9hqkii8gnmdrk5e3dkah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pnpj.noteshub",
+            "certificate_hash": "59f7bb6cbc90857f2a54a46d6efd22aa1ebfeccc"
+          }
+        },
+        {
+          "client_id": "316893719643-c9d4ls5su4lirruj1s3mp8i9te888fgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpz5qaHBavWS5hHTP2SXnUD4qCuDWFLtY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316893719643-c9d4ls5su4lirruj1s3mp8i9te888fgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
